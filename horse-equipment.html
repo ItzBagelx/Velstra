@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velstra - Horse Equipment</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="navbar-brand"><img src="images/ChatGPT Image Jul 12, 2025 at 06_17_59 PM.png" alt="Velstra Logo"></a>
+                <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-menu">
+                    <ul class="navbar-nav">
+                        <li><a href="apparel.html">Apparel</a></li>
+                        <li><a href="horse-equipment.html">Horse Equipment</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="navbar-cart">
+                        <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="horse-equipment" class="products">
+            <div class="container">
+                <h2>Horse Equipment</h2>
+                <div class="product-grid">
+                    <div class="product-item" id="saddles">
+                        <img src="images/it05561_studio_jumpingbreech_navy_0046_.jpg.webp" alt="Saddle">
+                        <h3>Velstra Leather Saddle</h3>
+                        <p>£2,500</p>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="add-to-cart-btn" data-product-id="saddle-leather" data-product-name="Velstra Leather Saddle" data-product-price="2500">Add to Cart</button>
+                    </div>
+                    <div class="product-item" id="bridles">
+                        <img src="images/it05954_product_suedegpsquare_lagoon__1_1_.jpg.webp" alt="Bridle">
+                        <h3>Velstra Anatomic Bridle</h3>
+                        <p>£250</p>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="add-to-cart-btn" data-product-id="bridle-anatomic" data-product-name="Velstra Anatomic Bridle" data-product-price="250">Add to Cart</button>
+                    </div>
+                    <div class="product-item" id="saddle-pads">
+                        <img src="images/it06152_studio_julettegilet_dusk_0048.jpg.webp" alt="Saddle Pad">
+                        <h3>Velstra Velvet Saddle Pad</h3>
+                        <p>£95</p>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="add-to-cart-btn" data-product-id="saddlepad-velvet" data-product-name="Velstra Velvet Saddle Pad" data-product-price="95">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/it05561_studio_jumpingbreech_navy_0046_.jpg.webp" alt="Girth">
+                        <h3>Velstra Dressage Girth</h3>
+                        <p>£120</p>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="add-to-cart-btn" data-product-id="girth-dressage" data-product-name="Velstra Dressage Girth" data-product-price="120">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/it05954_product_suedegpsquare_lagoon__1_1_.jpg.webp" alt="Reins">
+                        <h3>Velstra Leather Reins</h3>
+                        <p>£80</p>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="add-to-cart-btn" data-product-id="reins-leather" data-product-name="Velstra Leather Reins" data-product-price="80">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/it06152_studio_julettegilet_dusk_0048.jpg.webp" alt="Horse Boots">
+                        <h3>Velstra Tendon Boots</h3>
+                        <p>£70</p>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="add-to-cart-btn" data-product-id="horseboots-tendon" data-product-name="Velstra Tendon Boots" data-product-price="70">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Velstra. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

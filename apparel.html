@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velstra - Apparel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="navbar-brand"><img src="images/ChatGPT Image Jul 12, 2025 at 06_17_59 PM.png" alt="Velstra Logo"></a>
+                <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-menu">
+                    <ul class="navbar-nav">
+                        <li><a href="apparel.html">Apparel</a></li>
+                        <li><a href="horse-equipment.html">Horse Equipment</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="navbar-cart">
+                        <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="apparel" class="products">
+            <div class="container">
+                <h2>Apparel</h2>
+                <div class="product-grid">
+                    <div class="product-item" id="jackets">
+                        <img src="images/it05561_studio_jumpingbreech_navy_0046_.jpg.webp" alt="Show Jumping">
+                        <h3>Velstra Competition Jacket</h3>
+                        <p>£350</p>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="add-to-cart-btn" data-product-id="jacket-comp" data-product-name="Velstra Competition Jacket" data-product-price="350">Add to Cart</button>
+                    </div>
+                    <div class="product-item" id="breeches">
+                        <img src="images/it05954_product_suedegpsquare_lagoon__1_1_.jpg.webp" alt="Dressage">
+                        <h3>Velstra Riding Breeches</h3>
+                        <p>£180</p>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="add-to-cart-btn" data-product-id="breeches-riding" data-product-name="Velstra Riding Breeches" data-product-price="180">Add to Cart</button>
+                    </div>
+                    <div class="product-item" id="boots">
+                        <img src="images/it06152_studio_julettegilet_dusk_0048.jpg.webp" alt="Eventing">
+                        <h3>Velstra Leather Tall Boots</h3>
+                        <p>£650</p>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="add-to-cart-btn" data-product-id="boots-leather" data-product-name="Velstra Leather Tall Boots" data-product-price="650">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/it05561_studio_jumpingbreech_navy_0046_.jpg.webp" alt="Show Shirt">
+                        <h3>Velstra Show Shirt</h3>
+                        <p>£90</p>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="add-to-cart-btn" data-product-id="shirt-show" data-product-name="Velstra Show Shirt" data-product-price="90">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/it05954_product_suedegpsquare_lagoon__1_1_.jpg.webp" alt="Gloves">
+                        <h3>Velstra Riding Gloves</h3>
+                        <p>£45</p>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="add-to-cart-btn" data-product-id="gloves-riding" data-product-name="Velstra Riding Gloves" data-product-price="45">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/it06152_studio_julettegilet_dusk_0048.jpg.webp" alt="Helmet">
+                        <h3>Velstra Riding Helmet</h3>
+                        <p>£300</p>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="add-to-cart-btn" data-product-id="helmet-riding" data-product-name="Velstra Riding Helmet" data-product-price="300">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Velstra. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
