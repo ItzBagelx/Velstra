@@ -1,0 +1,373 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.navbar {
+    background-color: #fff;
+    padding: 15px 0; /* Adjusted padding */
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 100px; /* Adjusted logo size */
+    width: auto;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-nav li {
+    margin-left: 30px;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav a:hover {
+    color: #8B4513; /* SaddleBrown */
+}
+
+.navbar-cart {
+    margin-left: 30px;
+    position: relative; /* Ensure positioning context for cart count */
+}
+
+.cart-icon {
+    color: #333;
+    font-size: 1.5rem; /* Increased cart icon size */
+    text-decoration: none;
+}
+
+#cart-count {
+    background-color: #8B4513;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.75rem;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.navbar-toggler {
+    display: none; /* Hidden by default on desktop */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navbar-toggler-icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+}
+
+/* Hero Section */
+.hero {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #8B4513;
+}
+
+.btn-primary:hover {
+    background-color: #A0522D; /* Sienna */
+}
+
+/* Products Section */
+.products {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.products h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.product-item h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* About Section */
+.about {
+    background-color: #f7f7f7;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.contact a {
+    color: #8B4513;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Cart page styles */
+.cart {
+    padding: 80px 0;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+}
+
+.cart-item-details h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.cart-item-details p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.cart-item-quantity input {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+.remove-item-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart-summary {
+    text-align: right;
+    margin-top: 40px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#checkout-btn {
+    margin-top: 20px;
+}
+
+/* Add to cart button */
+.add-to-cart-btn {
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #A0522D;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: row; /* Keep items in a row */
+        flex-wrap: wrap;
+        justify-content: space-between; /* Space out items */
+    }
+
+    .navbar-brand {
+        order: 1; /* Logo first */
+    }
+
+    .navbar-toggler {
+        display: block; /* Show hamburger on mobile */
+        order: 3; /* Toggler after cart */
+        margin-left: 10px; /* Space from cart */
+    }
+
+    .navbar-cart {
+        order: 2; /* Cart second */
+        position: static; /* Remove absolute positioning */
+        margin-left: auto; /* Push to right */
+        margin-right: 10px; /* Add some right margin */
+    }
+
+    .navbar-menu {
+        flex-basis: 100%; /* Take full width */
+        order: 4; /* Menu last */
+        height: 0; /* Collapse by default */
+        overflow: hidden;
+        transition: height 0.3s ease-in-out;
+    }
+
+    .navbar-menu.active {
+        height: auto; /* Expand when active */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .navbar-nav li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .products h2,
+    .about h2,
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-item {
+        padding: 15px;
+    }
+
+    .product-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .product-item p {
+        font-size: 1rem;
+    }
+}
